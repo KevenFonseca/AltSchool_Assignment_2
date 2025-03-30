@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h2>A message about myself via media elements</h2>
+
+    <!-- Image -->
+    <picture>
+        <!-- Laptop view -->
+        <source srcset="assets/keven-photo-1.jpg" media="(min-width: 1025px)" width="1025px">
+
+        <!-- Tablet view -->
+        <source srcset="assets/keven-photo-2.jpg" media="(min-width: 769px) and (max-width: 1024px)" width="900">
+
+        <!-- Mobile view -->
+        <source srcset="assets/keven-photo-3.jpg" media="(max-width: 768px)" width="768"> 
+
+        <!-- Default image -->
+        <img src="./assets/keven-photo-1.jpg" alt="Keven relaxing">
+    </picture>
+
+    <br>
+
+    <!-- Audio -->
+    <audio src="./assets/keven-audio.mp3" controls></audio>
+
+    <br>
+
+    <!-- Video -->
+    <video src="./assets/keven-video.mp4" width="300" controls></video>
+</body>
+</html>
